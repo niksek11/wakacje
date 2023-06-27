@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://st4.depositphotos.com/1040166/19985/i/450/depositphotos_199854434-stock-photo-polish-flag-against-sunset-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 60px;
+  margin: -150px 0 40px;
+}
+
+.countdown {
+  display: flex;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+
+#endH2 {
+  font-size: 60px;
+}
+
+#playButton {
+  position: absolute;
+  background-color: ;
+  top: 58.6%;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 23.5px;
+}
+
+@media(max-width:500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+
+  #playButton {
+    top: 60.6%;
+  }
+}
