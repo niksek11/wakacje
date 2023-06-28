@@ -4,7 +4,7 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
-const waitTime = new Date("July 19, 2023 07:00:00");
+const waitTime = new Date("July 19, 2023 00:00:00");
 
 let first = true; let isPlaying = false
 
