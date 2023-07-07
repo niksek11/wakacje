@@ -81,7 +81,7 @@
         },
         methods: {
             updateMessage() {
-                const waitTime = new Date("June 19, 2023 00:00:00");
+                const waitTime = new Date("July 19, 2023 00:00:00");
                 const currentTime = new Date();
                 const diffTime = waitTime - currentTime;
 
