@@ -3,7 +3,7 @@
         <div class="flex flex-col items-center justify-center h-screen w-screen bg-cover bg-center" :style="'background-image: url(' + background + ');'">
             <div v-if="showTime">
                 <div class="flex flex-col items-center">
-                    <p class="lg:text-7xl sm:text-3xl md:text-6xl lg:mt-[-13vh] sm:mt-[-7vh]">Odliczanie do dnia wylotu</p>
+                    <p class="lg:text-7xl sm:text-3xl md:text-6xl lg:mt-[-13vh] sm:mt-[-7vh]">Odliczanie do powrotu</p>
                 </div>
 
                 <div class="flex flex-row items-center justify-center">
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div v-else>
-                <p class="lg:text-7xl sm:text-3xl md:text-6xl lg:mt-[-13vh] sm:mt-[-7vh] text-white">Już lecimy!</p>
+                <p class="lg:text-7xl sm:text-3xl md:text-6xl lg:mt-[-13vh] sm:mt-[-7vh] text-white">Już wracamy!</p>
                 <div v-if="isPlaying">
                     <div class="flex flex-col items-center">
                         <button @click="toggleRadio()" class="bg-rose-700 hover:bg-rose-950 text-white font-bold py-2 px-4 rounded-lg text-lg">
@@ -81,7 +81,7 @@
         },
         methods: {
             updateMessage() {
-                const waitTime = new Date("July 19, 2023 00:00:00");
+                const waitTime = new Date("August 13, 2023 00:00:00");
                 const currentTime = new Date();
                 const diffTime = waitTime - currentTime;
 
